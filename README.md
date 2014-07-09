@@ -34,27 +34,27 @@
 		<br>
 		<br>
 		<div id="main-area">
-		<section id="intro">
+		<div id="intro">
 			<h2 class="heading1"><span class="number">1</span>Introduction</h2>
 			<p>
 			TUkkA RASk is an autonomous, microprocessor driven rover designed to locate and record frequencies of randomly placed, infared emitting beacons. It's main processor is a PIC18F452. The QwikFlash development board is directly used in the application.
 			 The name draws inspiration from renown Finnish ice hockey goaltender, TUkkA RASk of the NHL's Boston Bruins. The goal of this project is to successful get Tukka Rask to find and collect the frequency of 5 different beacons.
 			</p>
-		</section>
+		</div>
 			<span class="to-top"><a href="#top">Back to Top</a></span>
 		
-		<section id="use">
+		<div id="use">
 			<h2 class="heading1"><span class="number">2</span>Usage Instructions</h2>
 			<p>
-			This section is dedicated to the proper utilization and initialization of TUkkA RASk, as well as the necessary steps involved in diagnosing potential issues early on.
+			This div is dedicated to the proper utilization and initialization of TUkkA RASk, as well as the necessary steps involved in diagnosing potential issues early on.
 			</p>
-			<section id="started">
+			<div id="started">
 				<h2 class="heading2"><span class="number">2.1</span>Getting Started</h2>
 				<p>
 				TuKKA RASk requires a fully charged NiMH (7.2V) battery for operation. It should be securely fastened to the underside of the circular base with the pre-installed velcro Next, ensure that the main power switch on the front left hand (facing) side of the robot clip is toggled to the upward 'Off' position. Furthermore, properly adjust the ON/OFF switch on the QwikFlash board to the OFF position if not already. Now fasten the female end (battery) to the male clip located directly beneath the main power switch. Ensure that both wheel wells are clear of debris. Straighten any curves/bends that may have happened to the photodiodes protruding from the front right of the robot.
 				</p>
-			</section>
-			<section id="powerup">
+			</div>
+			<div id="powerup">
 				<h2 class="heading2"><span class="number">2.2</span>Powering on and Preliminary System Check</h2>
 				<p>
 				Once the power source is connected, toggle the main power switch to the downward 'On' position followed by the smaller ON switch (SW1) located on the QwikFlash board. A small system check is to be performed before proceeding with the main functionality of the robot.
@@ -73,8 +73,8 @@
 						</li>
 					</ol>
 				<p></p>
-			</section>
-			<section id="running">
+			</div>
+			<div id="running">
 				<h2 class="heading2"><span class="number">2.3</span>Running</h2>
 				<p>
 				Now that a preliminary status check of the robot has been performed, it is time to enter TUkkA RASk into search mode. The following step are required.
@@ -96,8 +96,8 @@
 						</li>
 					</ol>
 				<p></p>
-			</section>
-			<section id="powerdown">
+			</div>
+			<div id="powerdown">
 				<h2 class="heading2"><span class="number">2.4</span>Powering Down</h2>
 				<p>
 					Once the entire procedure has been completed, undergo to following steps to ensure that TUkkA RASk is properly shut down.
@@ -110,16 +110,16 @@
 					Detach the clip connecting the battery from the main male power connector. Carefully peel the 7.2V NiMH battery off the velcro on the underside of the robot. 
 					</li>
 				</ol>
-			</section>
-		</section>
+			</div>
+		</div>
 			<span class="to-top"><a href="#top">Back to Top</a></span>	
 			
-		<section id="tech">
+		<div id="tech">
 			<h2 class="heading1"><span class="number">3</span>Technical Specifications</h2>
 			<p>
-			This section will outline the various inputs and outputs associated with TUKKa RASk as well as a brief explanation of the assembly algorithm.
+			This div will outline the various inputs and outputs associated with TUKKa RASk as well as a brief explanation of the assembly algorithm.
 			</p>
-			<section id="in">
+			<div id="in">
 				<h2 class="heading2"><span class="number">3.1</span>Inputs</h2>
 				<p>
 				The various components sending input and effectively acting as senses, to the robot are as follows.
@@ -146,8 +146,8 @@
 						</p>
 					</li>
 				</ul>
-			</section>
-			<section id="out">
+			</div>
+			<div id="out">
 				<h2 class="heading2"><span class="number">3.2</span>Outputs</h2>
 				<p>
 				The following devices are considered outputs and allow the robot to control itself, and provide feedback.
@@ -164,8 +164,8 @@
 						</p>
 					</li>
 				</ul>
-			</section>
-			<section id="inout">
+			</div>
+			<div id="inout">
 				<h2 class="heading2"><span class="number">3.3</span>Inputs/Outputs</h2>
 				<p>
 				The third and final classification of devices both send outputs, as well as facilitate the collection of input.
@@ -178,8 +178,8 @@
 						</p>
 					</li>
 				</ul>
-			</section>
-			<section id="code">
+			</div>
+			<div id="code">
 				<h2 class="heading2"><span class="number">3.4</span>Code</h2>
 				<p>
 				The PIC8F452&nbsp;is programmed&nbsp;in PIC assembly.&nbsp;Both interrupts&nbsp;and polling&nbsp;techniques&nbsp;are used.&nbsp;The interrupts&nbsp;are mainly used&nbsp;to&nbsp;trigger&nbsp;'events'&nbsp;or&nbsp;flags,&nbsp;as&nbsp;well&nbsp;as&nbsp;for&nbsp;timing&nbsp;purposes.&nbsp;The main&nbsp;routine&nbsp;then&nbsp;polls&nbsp;these&nbsp;'events'.&nbsp;This&nbsp;system&nbsp;allows&nbsp;for&nbsp;quick interrupt&nbsp;handling.&nbsp;Timing&nbsp;functions,&nbsp;and&nbsp;servos&nbsp;interrupts&nbsp;are&nbsp;high priority.&nbsp;The&nbsp;CCP,&nbsp;ultrasonic&nbsp;sensors,&nbsp;and&nbsp;USART&nbsp;interrupts&nbsp;are&nbsp;low priority.&nbsp;CCP,&nbsp;and&nbsp;ultrasonics&nbsp;interrupts&nbsp;are&nbsp;only&nbsp;enabled&nbsp;when needed.
@@ -252,17 +252,17 @@
 					</tbody>
 				</table>
 		
-			</section>
-		</section>
+			</div>
+		</div>
 			<span class="to-top"><a href="#top">Back to Top</a></span>	
-		<section id="schematic">
+		<div id="schematic">
 			<h2 class="heading1"><span class="number">4</span>Schematic</h2>
 			<p> Below is a schematic of the hardware associated (beyond the QwikFlash board). The callouts refer to which input pin on the PIC are interfaced.
 			</p>
 			<embed src="images/schem.svg">
-		</section>
+		</div>
 			<span class="to-top"><a href="#top">Back to Top</a></span>
-		<section id="gallery">
+		<div id="gallery">
 			<h2 class="heading1"><span class="number">5</span>Gallery</h2>
 			<div id="gallery">
 				<div id="gallery_pic">
@@ -286,10 +286,10 @@
 					Top
 				</div>
 			</div>
-		</section>
+		</div>
 			<span class="to-top"><a href="#top">Back to Top</a></span>	
 		
-		<section id="refer">
+		<div id="refer">
 			<h2 class="heading1"><span class="number">6</span>References</h2>
 			<p> The following is a list of links that were used in the development of TUkkA RASk.
 			</p>
@@ -319,7 +319,7 @@
 				<br><a href="https://www.tinkercad.com/things/7nEplA1kxXS-ultrasonic-sensor-mount">Ultrasonic Sensor Mount</a>
 				</li>
 			</ul>
-		</section>
+		</div>
 			<span class="to-top"><a href="#top">Back to Top</a></span>	
 			
 	</div>
